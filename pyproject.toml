@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "emoji-explainer"
+version = "0.1.0"
+description = "create a single endpoint that takes in an emoji and responds with the explaination. Use Groq and specifically llama3 to get the explaination from"
+authors = ["AutoGPT <info@agpt.co>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.11,<4.0"
+bcrypt = "^3.2.0"
+emoji = "^1.7.0"
+fastapi = "*"
+httpx = "^0.21.3"
+openai = "*"
+prisma = "*"
+pydantic = "*"
+pyjwt = "^2.6.0"
+uvicorn = "*"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
